@@ -1,0 +1,41 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: rgb(218, 216, 216);
+  border: solid 1px rgb(160, 158, 158);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.o,
+.x {
+  position: relative;
+}
+
+.o::after {
+  content: "\1F534";
+  font-size: 50px;
+  position: absolute;
+  line-height: 100px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.x::after {
+  content: "\274C";
+  font-size: 50px;
+  position: absolute;
+  line-height: 100px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
